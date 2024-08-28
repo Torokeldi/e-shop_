@@ -1,27 +1,43 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@/public/assets/logo.png';
+import heartIcon from '@/public/assets/heart.svg';
+import targetIcon from '@/public/assets/cart.svg';
+import seachIcon from '@/public/assets/search.svg';
+import './style.css';
 
 const Header: React.FC = () => {
   return (
-    <header className="w-full py-4 bg-gray-800 text-white">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center cursor-pointer">
-          <Link href="/" legacyBehavior>
-            <a>
-              <Image src={logo} alt="Logo" width={50} height={50} />
-            </a>
-          </Link>
-          <span className="ml-2 text-xl font-bold">My Shop</span>
+    <div className="container">
+      <div className="header">
+        <h1 className="logo-text">Exclusive</h1>
+        <div className="header-menu">
+          <a className="menu-items">Home</a>
+          <a href="#" className="menu-items">
+            Contact
+          </a>
+          <a href="#" className="menu-items">
+            About
+          </a>
+          <a href="#" className="menu-items">
+            Sign Up
+          </a>{' '}
         </div>
-        <nav>
-          <Link href="/login" legacyBehavior>
-            <a className="text-lg">Login</a>
-          </Link>
-        </nav>
+
+        <div className="search-and-icons">
+          <div className="search-bar">
+            <input
+              className="search-field"
+              placeholder="What are you looking for?"
+            />
+            <Image className="search-icon" src={seachIcon} alt={''} />
+          </div>
+          <div className="header-icons">
+            <Image className="header-icon-item" src={heartIcon} alt={''} />
+            <Image className="header-icon-item" src={targetIcon} alt={''} />
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   );
 };
 

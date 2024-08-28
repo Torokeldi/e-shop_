@@ -1,0 +1,93 @@
+footer {
+  background: #000;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  color: rgb(250, 250, 250);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-list h1 {
+  margin-bottom: 24px;
+}
+
+.footer-titles {
+  color: rgb(250, 250, 250);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-list b {
+  margin-bottom: 24px;
+}
+
+.footer-list p,
+.footer-list a {
+  color: rgb(250, 250, 250);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.footer-input {
+  box-sizing: border-box;
+  border: 1.5px solid rgb(250, 250, 250);
+  border-radius: 4px;
+  background: #000;
+  padding: 12px;
+  width: 217px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-input input {
+  background: #000;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.footer-input input::placeholder {
+  color: rgb(250, 250, 250);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-list:last-child p {
+  color: rgb(250, 250, 250);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.qrcode-appstore {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.appstore-googleplay {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.social-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
