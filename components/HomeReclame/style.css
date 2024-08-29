@@ -1,0 +1,33 @@
+.home-reclame-content {
+  margin-top: 60px;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-reclame-content p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: row;
+  gap: 51px;
+  width: 217px;
+  height: 24px;
+}
+
+.home-dropdown,
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reclame-img {
+  width: 892px;
+  height: 344px;
+}
