@@ -1,0 +1,139 @@
+.flash-sale-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sale-info {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.red-box {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(219, 68, 68);
+  border-radius: 5px;
+}
+
+.sale-info p {
+  color: rgb(219, 68, 68);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flash-sale-header-bottom {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.sale-title {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 600;
+  margin-right: 87px;
+}
+
+.countdown-timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 484px;
+}
+
+.timer-title {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.unitValue {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.divider {
+  margin-left: 17px;
+  margin-right: 17px;
+  color: rgb(219, 68, 68);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+}
+
+.products-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  justify-content: center;
+  width: 1308px;
+}
+
+.productList {
+  flex: 0 0 270px;
+  display: flex;
+  flex-direction: row;
+}
+
+.productCard {
+  background: rgb(245, 245, 245);
+  border-radius: 8px;
+  width: 270px;
+  height: 350px;
+  margin-right: 30px;
+}
+
+.productImageWrapper {
+  background: rgb(245, 245, 245);
+}
+
+.productDiscount {
+  border-radius: 4px;
+  width: 55px;
+  color: rgb(250, 250, 250);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 12px 4px 12px;
+  height: 26px;
+  position: relative;
+  left: -92px;
+  top: 12px;
+  background: rgb(219, 68, 68);
+}
+
+.productImage {
+  position: relative;
+  width: 172px;
+  height: 152px;
+  left: -20px;
+  top: 49px;
+}
+
+.productIcons {
+  position: relative;
+  left: 100px;
+  top: -160px;
+}

@@ -27,7 +27,9 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer-list">
             <h1 className="footer-titles">Support</h1>
-            <p style={{width: '175px'}}>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p style={{ width: '175px' }}>
+              111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+            </p>
             <p>exclusive@gmail.com</p>
             <p>+88015-88888-9999</p>
           </div>
