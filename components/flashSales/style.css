@@ -190,6 +190,15 @@
   font-weight: 600;
 }
 
+.add-cart-btn {
+  width: 270px;
+  height: 41px;
+  border-radius: 0px 0px 4px 4px;
+  background: rgb(0, 0, 0);
+  position: relative;
+  top: -45px;
+}
+
 .ViewBtn {
   width: 234px;
   padding: 16px 48px 16px 48px;

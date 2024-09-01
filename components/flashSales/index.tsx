@@ -5,12 +5,9 @@ import arrowRight from '@/public/assets/arrow_right.svg';
 import heartIcon from '@/public/assets/heart.svg';
 import starsIcon from '@/public/assets/stars_icon.svg';
 import eyeIcon from '@/public/assets/eye_icon.svg';
-import './flashSale.css';
+import './style.css';
 
 const FlashSales: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const products = [
     {
       name: 'HAVIT HV-G92 Gamepad',
@@ -59,6 +56,10 @@ const FlashSales: React.FC = () => {
     () => products,
   );
 
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -68,7 +69,7 @@ const FlashSales: React.FC = () => {
   }, []);
 
   function calculateTimeLeft() {
-    const endDate = new Date('2024-12-01T00:00:00');
+    const endDate = new Date('2024-10-29T00:00:00');
     const now = new Date();
     const difference = endDate.getTime() - now.getTime();
 
@@ -154,7 +155,12 @@ const FlashSales: React.FC = () => {
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
           {repeatedProducts.map((product, index) => (
-            <div className="productList" key={index}>
+            <div
+              className="productList"
+              key={index}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
               <div className="productCard">
                 <div className="productImageWrapper">
                   <div className="productDiscount">{product.discount}</div>
@@ -175,6 +181,9 @@ const FlashSales: React.FC = () => {
                       </div>
                     </div>
                   </div>
+                  {hoveredIndex === index && (
+                    <button className="add-cart-btn">Add to Cart</button>
+                  )}
                 </div>
                 <div className="productDetails">
                   <p className="productName">{product.name}</p>
