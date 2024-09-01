@@ -102,93 +102,96 @@ const FlashSales: React.FC = () => {
 
   return (
     <div className="container">
-      <div className="flash-sale-header">
-        <div className="sale-info">
-          <div className="red-box"></div>
-          <p>Today’s</p>
-        </div>
-        <div className="flash-sale-header-bottom">
-          <h1 className="sale-title">Flash Sales</h1>
-          <div className="countdown-timer">
-            <div className="time-unit">
-              <p className="timer-title">Days</p>
-              <p className="unitValue">
-                {timeLeft.days.toString().padStart(2, '0')}
-              </p>
+      <div className="flash-sale-content">
+        <div className="flash-sale-header">
+          <div className="sale-info">
+            <div className="red-box"></div>
+            <p>Today’s</p>
+          </div>
+          <div className="flash-sale-header-bottom">
+            <h1 className="sale-title">Flash Sales</h1>
+            <div className="countdown-timer">
+              <div className="time-unit">
+                <p className="timer-title">Days</p>
+                <p className="unitValue">
+                  {timeLeft.days.toString().padStart(2, '0')}
+                </p>
+              </div>
+              <p className="divider">:</p>
+              <div className="time-unit">
+                <p className="timer-title">Hours</p>
+                <p className="unitValue">
+                  {timeLeft.hours.toString().padStart(2, '0')}
+                </p>
+              </div>
+              <p className="divider">:</p>
+              <div className="time-unit">
+                <p className="timer-title">Minutes</p>
+                <p className="unitValue">
+                  {timeLeft.minutes.toString().padStart(2, '0')}
+                </p>
+              </div>
+              <p className="divider">:</p>
+              <div className="time-unit">
+                <p className="timer-title">Seconds</p>
+                <p className="unitValue">
+                  {timeLeft.seconds.toString().padStart(2, '0')}
+                </p>
+              </div>
             </div>
-            <p className="divider">:</p>
-            <div className="time-unit">
-              <p className="timer-title">Hours</p>
-              <p className="unitValue">
-                {timeLeft.hours.toString().padStart(2, '0')}
-              </p>
-            </div>
-            <p className="divider">:</p>
-            <div className="time-unit">
-              <p className="timer-title">Minutes</p>
-              <p className="unitValue">
-                {timeLeft.minutes.toString().padStart(2, '0')}
-              </p>
-            </div>
-            <p className="divider">:</p>
-            <div className="time-unit">
-              <p className="timer-title">Seconds</p>
-              <p className="unitValue">
-                {timeLeft.seconds.toString().padStart(2, '0')}
-              </p>
+            <div className="icons">
+              <div className="icon" onClick={PrevBtn}>
+                <Image src={arrowLeft} alt="Arrow Left" />
+              </div>
+              <div className="icon" onClick={NextBtn}>
+                <Image src={arrowRight} alt="Arrow Right" />
+              </div>
             </div>
           </div>
-          <div className="icons">
-            <div className="icon" onClick={PrevBtn}>
-              <Image src={arrowLeft} alt="Arrow Left" />
-            </div>
-            <div className="icon" onClick={NextBtn}>
-              <Image src={arrowRight} alt="Arrow Right" />
-            </div>
-          </div>
         </div>
-      </div>
-      <div
-        className="products-container"
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-      >
-        {repeatedProducts.map((product, index) => (
-          <div className="productList" key={index}>
-            <div className="productCard">
-              <div className="productImageWrapper">
-                <div className="productDiscount">{product.discount}</div>
-                <div className="productImage-icons">
-                  <Image
-                    src={product.img}
-                    alt={product.name}
-                    className="productImage"
-                    width={200}
-                    height={200}
-                  />
-                  <div className="productIcons">
-                    <div className="icon">
-                      <Image src={heartIcon} alt="Favorite Icon" />
-                    </div>
-                    <div className="icon">
-                      <Image src={eyeIcon} alt="View Icon" />
+        <div
+          className="products-container"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {repeatedProducts.map((product, index) => (
+            <div className="productList" key={index}>
+              <div className="productCard">
+                <div className="productImageWrapper">
+                  <div className="productDiscount">{product.discount}</div>
+                  <div className="productImage-icons">
+                    <Image
+                      src={product.img}
+                      alt={product.name}
+                      className="productImage"
+                      width={200}
+                      height={200}
+                    />
+                    <div className="productIcons">
+                      <div className="icon">
+                        <Image src={heartIcon} alt="Favorite Icon" />
+                      </div>
+                      <div className="icon">
+                        <Image src={eyeIcon} alt="View Icon" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="productDetails">
-                <p className="productName">{product.name}</p>
-                <div className="productPricing">
-                  <p className="currentPrice">${product.currentPrice}</p>
-                  <p className="originalPrice">${product.originalPrice}</p>
-                </div>
-                <div className="productReviews">
-                  <Image src={starsIcon} alt="Star Rating" />
-                  <p className="reviewCount">({product.reviewCount})</p>
+                <div className="productDetails">
+                  <p className="productName">{product.name}</p>
+                  <div className="productPricing">
+                    <p className="currentPrice">${product.currentPrice}</p>
+                    <p className="originalPrice">${product.originalPrice}</p>
+                  </div>
+                  <div className="productReviews">
+                    <Image src={starsIcon} alt="Star Rating" />
+                    <p className="reviewCount">({product.reviewCount})</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <button className="ViewBtn">View All Products</button>
       </div>
     </div>
   );

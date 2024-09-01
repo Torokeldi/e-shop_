@@ -1,3 +1,7 @@
+.flash-sale-content {
+  margin-bottom: 140px;
+}
+
 .flash-sale-header {
   display: flex;
   flex-direction: column;
@@ -99,7 +103,6 @@
 }
 
 .productCard {
-  background: rgb(245, 245, 245);
   border-radius: 8px;
   width: 270px;
   height: 350px;
@@ -107,7 +110,9 @@
 }
 
 .productImageWrapper {
+  width: 270px;
   background: rgb(245, 245, 245);
+  height: 250px;
 }
 
 .productDiscount {
@@ -136,4 +141,63 @@
   position: relative;
   left: 100px;
   top: -160px;
+}
+
+.productName {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  top: 22px;
+  left: -40px;
+}
+
+.productPricing {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  top: 30px;
+  left: 0px;
+}
+
+.currentPrice {
+  color: rgb(219, 68, 68);
+}
+
+.originalPrice {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  text-decoration-line: line-through;
+}
+
+.productReviews {
+  position: relative;
+  top: 34px;
+  left: -2px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.reviewCount {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.ViewBtn {
+  width: 234px;
+  padding: 16px 48px 16px 48px;
+  height: 56px;
+  margin-top: 60px;
+  border-radius: 4px;
+  background: rgb(219, 68, 68);
+  font-size: 16px;
+  font-weight: 500;
+  color: #f0f8ff;
 }
