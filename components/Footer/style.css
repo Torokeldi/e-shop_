@@ -2,6 +2,7 @@ footer {
   background: #000;
   padding-top: 80px;
   padding-bottom: 124px;
+  font-family: Poppins;
 }
 
 .footer-content {
@@ -23,6 +24,7 @@ footer {
 
 .footer-list h1 {
   margin-bottom: 24px;
+  font-family: Inter;
 }
 
 .footer-titles {

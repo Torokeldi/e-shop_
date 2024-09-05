@@ -10,6 +10,7 @@
   color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: 700;
+  font-family: Inter;
 }
 
 .header-menu {
@@ -53,6 +54,7 @@
 .search-field {
   background: transparent;
   outline: none;
+  font-family: Poppins;
   color: #000;
 }
 

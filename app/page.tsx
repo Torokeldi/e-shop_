@@ -4,6 +4,9 @@ import React from 'react';
 import Footer from '@/components/Footer';
 import HomeReclame from '@/components/HomeReclame';
 import FlashSales from '@/components/flashSales';
+import Categories from '@/components/Categories';
+import Delivery from '@/components/Delivery';
+import Features from '@/components/Features';
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +14,9 @@ const Home: React.FC = () => {
       <Header />
       <HomeReclame />
       <FlashSales />
+      <Categories />
+      <Features />
+      <Delivery />
       <Footer />
     </>
   );

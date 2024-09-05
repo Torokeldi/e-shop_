@@ -28,6 +28,7 @@
   color: rgb(219, 68, 68);
   font-size: 16px;
   font-weight: 600;
+  font-family: Poppins;
 }
 
 .flash-sale-header-bottom {
@@ -41,6 +42,7 @@
   font-size: 36px;
   font-weight: 600;
   margin-right: 87px;
+  font-family: Inter;
 }
 
 .countdown-timer {
@@ -54,6 +56,7 @@
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-weight: 500;
+  font-family: Poppins;
 }
 
 .time-unit {
@@ -67,6 +70,7 @@
   color: rgb(0, 0, 0);
   font-size: 32px;
   font-weight: 700;
+  font-family: Inter;
 }
 
 .divider {
@@ -127,6 +131,7 @@
   left: -92px;
   top: 12px;
   background: rgb(219, 68, 68);
+  font-family: Poppins;
 }
 
 .productImage {
@@ -150,6 +155,7 @@
   position: relative;
   top: 22px;
   left: -40px;
+  font-family: Poppins;
 }
 
 .productPricing {
@@ -157,6 +163,7 @@
   flex-direction: row;
   gap: 12px;
   font-size: 16px;
+  font-family: Poppins;
   font-weight: 500;
   line-height: 24px;
   position: relative;
@@ -188,6 +195,7 @@
   font-size: 14px;
   opacity: 0.5;
   font-weight: 600;
+  font-family: Poppins;
 }
 
 .add-cart-btn {
