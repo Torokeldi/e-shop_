@@ -9,6 +9,7 @@ import Delivery from '@/components/Delivery';
 import Features from '@/components/Features';
 import Promotion from '@/components/Promotion';
 import PromoBanner from '@/components/PromoBanner';
+import Explore from '@/components/Explore';
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
       <Categories />
       <Promotion />
       <PromoBanner />
+      <Explore />
       <Features />
       <Delivery />
       <Footer />

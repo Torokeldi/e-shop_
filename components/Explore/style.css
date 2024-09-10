@@ -1,0 +1,135 @@
+.explore-content {
+  margin-top: 71px;
+}
+
+.explore-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.explore-header-top {
+  width: 142px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.explore-header-top p {
+  color: rgb(219, 68, 68);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Poppins;
+  white-space: nowrap;
+}
+
+.explore-red-box {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(219, 68, 68);
+  border-radius: 5px;
+}
+
+.explore-header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.explore-title {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 600;
+  margin-right: 87px;
+  font-family: Inter;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+}
+
+.explore-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.explore-card {
+  width: 270px;
+  height: 322px;
+}
+
+.card-image-bar {
+  background: rgb(245, 245, 245);
+  width: 270px;
+  height: 250px;
+}
+
+.card-icons {
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+.card-icons img[alt='Add to Favorites'] {
+  margin-bottom: 28px;
+}
+
+.card-img {
+  position: relative;
+  left: -10px;
+  top: -20px;
+  width: 115px;
+  height: 180px;
+}
+
+.card-info-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.card-name {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.price-count {
+  color: rgb(219, 68, 68);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.info-bar-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-count {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
