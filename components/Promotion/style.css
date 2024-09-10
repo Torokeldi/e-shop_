@@ -1,0 +1,164 @@
+.promotion-content {
+  margin-bottom: 140px;
+}
+
+.promotion-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.promotion-info {
+  width: 125px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.promotion-red-box {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(219, 68, 68);
+  border-radius: 5px;
+}
+
+.promotion-info p {
+  color: rgb(219, 68, 68);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Poppins;
+  white-space: nowrap;
+}
+
+.promotion-header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.promotion-title {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 600;
+  margin-right: 87px;
+  font-family: Inter;
+  margin-top: 20px;
+}
+
+.promotion-btn {
+  padding: 16px 48px 16px 48px;
+  color: rgb(250, 250, 250);
+  font-family: Poppins;
+  font-size: 16px;
+  border-radius: 4px;
+  background: rgb(219, 68, 68);
+  font-weight: 500;
+}
+
+.promotion-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.product-card {
+  width: 270px;
+  height: 350px;
+}
+
+.product-image-container {
+  width: 270px;
+  height: 250px;
+  background: rgb(245, 245, 245);
+}
+
+.promotion-icon-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  left: 215px;
+  top: 20px;
+}
+
+.promotion-icon {
+  width: 34px;
+  height: 34px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.promotion-icon img {
+  width: 16px;
+  height: 14px;
+}
+
+.product-main-image img {
+  width: 190px;
+  height: 180px;
+  position: relative;
+  left: -6px;
+  top: -45px;
+}
+
+.product-main-image img[alt='RGB Liquid CPU Cooler'] {
+  width: 191px;
+  height: 95px;
+  top: 25px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.product-name {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.product-price-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.product-price {
+  color: rgb(219, 68, 68);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-old-price {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration-line: line-through;
+}
+
+.product-rating {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.rating-stars {
+  width: 100px;
+  height: 20px;
+}
+
+.review-count {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
