@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           </a>
           <a href="#" className="menu-items">
             Sign Up
-          </a>{' '}
+          </a>
         </div>
 
         <div className="search-and-icons">
@@ -29,11 +29,11 @@ const Header: React.FC = () => {
               className="search-field"
               placeholder="What are you looking for?"
             />
-            <Image className="search-icon" src={seachIcon} alt={''} />
+            <Image className="search-icon" src={seachIcon} alt="icon" />
           </div>
           <div className="header-icons">
-            <Image className="header-icon-item" src={heartIcon} alt={''} />
-            <Image className="header-icon-item" src={targetIcon} alt={''} />
+            <Image className="header-icon-item" src={heartIcon} alt="icon" />
+            <Image className="header-icon-item" src={targetIcon} alt="icon" />
           </div>
         </div>
       </div>
