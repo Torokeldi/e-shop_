@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <p>Get 10% off your first order</p>
             <div className="footer-input">
               <input type="email" placeholder="Enter your email" />
-              <Image src={arrowIcon} alt="" />
+              <Image src={arrowIcon} alt="icon" />
             </div>
           </div>
           <div className="footer-list">
@@ -52,24 +52,24 @@ const Footer: React.FC = () => {
             <h1>Download App</h1>
             <p>Save $3 with App New User Only</p>
             <div className="qrcode-appstore">
-              <Image src={qrCode} alt="" className="qr-code" />
+              <Image src={qrCode} alt="icon" className="qr-code" />
               <div className="appstore-googleplay">
-                <Image src={googlePlayBadge} alt="" />
-                <Image src={appStoreBadge} alt="" />
+                <Image src={googlePlayBadge} alt="icon" />
+                <Image src={appStoreBadge} alt="icon" />
               </div>
             </div>
             <div className="social-buttons">
               <a href="#">
-                <Image src={facebookIcon} alt="" />
+                <Image src={facebookIcon} alt="icon" />
               </a>
               <a href="#">
-                <Image src={twitterIcon} alt="" />
+                <Image src={twitterIcon} alt="icon" />
               </a>
               <a href="#">
-                <Image src={instagramIcon} alt="" />
+                <Image src={instagramIcon} alt="icon" />
               </a>
               <a href="#">
-                <Image src={linkedinIcon} alt="" />
+                <Image src={linkedinIcon} alt="icon" />
               </a>
             </div>
           </div>

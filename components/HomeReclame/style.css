@@ -11,6 +11,7 @@
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .dropdown-item {
@@ -18,7 +19,12 @@
   flex-direction: row;
   gap: 51px;
   width: 217px;
-  height: 24px;
+  height: 44px;
+}
+
+.dropdown-item img {
+  width: 7.78px;
+  height: 12.73px;
 }
 
 .home-dropdown,
@@ -31,4 +37,8 @@
 .reclame-img {
   width: 892px;
   height: 344px;
+}
+
+.dropdown-content.open {
+  max-height: 200px;
 }
