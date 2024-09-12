@@ -4,52 +4,47 @@ import triangleIcon from '@/public/assets/triangle.png';
 import reclame from '@/public/assets/reclame.png';
 import './style.css';
 
-const HomeReclame: React.FC = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+const dropdownData = [
+  { id: 'women', label: 'Woman’s Fashion' },
+  { id: 'men', label: 'Men’s Fashion' },
+];
 
-  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+const dropdownContent = (
+  <>
+    <p>Electronics</p>
+    <p>Home & Lifestyle</p>
+    <p>Medicine</p>
+    <p>Sports & Outdoor</p>
+    <p>Baby’s & Toys</p>
+    <p>Groceries & Pets</p>
+    <p>Health & Beauty</p>
+  </>
+);
+
+const HomeReclame: React.FC = () => {
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (dropdown: string) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
 
   return (
     <div className="container">
       <section className="home-reclame-content">
         <div className="home-dropdown">
-          <div>
-            <div className="dropdown-item" onClick={toggleDropdown}>
-              <p>Woman’s Fashion</p>
-              <Image src={triangleIcon} alt="Dropdown Icon" />
-            </div>
-            {isDropdownOpen && (
-              <div className="dropdown-content">
-                <p>Electronics</p>
-                <p>Home & Lifestyle</p>
-                <p>Medicine</p>
-                <p>Sports & Outdoor</p>
-                <p>Baby’s & Toys</p>
-                <p>Groceries & Pets</p>
-                <p>Health & Beauty</p>
+          {dropdownData.map(({ id, label }) => (
+            <div key={id}>
+              <div className="dropdown-item" onClick={() => toggleDropdown(id)}>
+                <p>{label}</p>
+                <Image src={triangleIcon} alt="Dropdown Icon" />
               </div>
-            )}
-          </div>
-
-          <div>
-            <div className="dropdown-item" onClick={toggleDropdown}>
-              <p>Men’s Fashion</p>
-              <Image src={triangleIcon} alt="Dropdown Icon" />
+              {activeDropdown === id && (
+                <div className="dropdown-content">{dropdownContent}</div>
+              )}
             </div>
-            {isDropdownOpen && (
-              <div className="dropdown-content">
-                <p>Electronics</p>
-                <p>Home & Lifestyle</p>
-                <p>Medicine</p>
-                <p>Sports & Outdoor</p>
-                <p>Baby’s & Toys</p>
-                <p>Groceries & Pets</p>
-                <p>Health & Beauty</p>
-              </div>
-            )}
-          </div>
+          ))}
         </div>
-        <Image className="reclame-img" src={reclame} alt="" />
+        <Image className="reclame-img" src={reclame} alt="reclame" />
       </section>
     </div>
   );
