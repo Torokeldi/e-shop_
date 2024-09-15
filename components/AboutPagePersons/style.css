@@ -1,0 +1,43 @@
+.about-page-persons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.person-img-box {
+  padding-top: 39px;
+  padding-left: 64px;
+  width: 370px;
+  height: 430px;
+  padding-right: 64px;
+}
+
+.person-card {
+  width: 370px;
+  height: 564px;
+}
+
+.person-card h3 {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 32px;
+}
+
+.person-card p {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 20px;
+}

@@ -4,6 +4,7 @@ import heartIcon from '@/public/assets/heart.svg';
 import targetIcon from '@/public/assets/cart.svg';
 import seachIcon from '@/public/assets/search.svg';
 import './style.css';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
@@ -11,16 +12,18 @@ const Header: React.FC = () => {
       <div className="header">
         <h1 className="logo-text">Exclusive</h1>
         <div className="header-menu">
-          <a className="menu-items">Home</a>
-          <a href="#" className="menu-items">
+          <Link href="/" className="menu-items">
+            Home
+          </Link>
+          <Link href="/contacts" className="menu-items">
             Contact
-          </a>
-          <a href="#" className="menu-items">
+          </Link>
+          <Link href="/about" className="menu-items">
             About
-          </a>
-          <a href="#" className="menu-items">
+          </Link>
+          <Link href="/signip" className="menu-items">
             Sign Up
-          </a>
+          </Link>
         </div>
 
         <div className="search-and-icons">
