@@ -1,0 +1,43 @@
+.contact-info-content {
+  width: 340px;
+  height: 457px;
+  padding: 40px 35px 50px 35px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-item p {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-txt {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.line {
+  width: 270px;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+

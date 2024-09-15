@@ -1,31 +1,13 @@
 'use client';
-import Header from '@/components/Header';
+import Home from '@/components/Home';
 import React from 'react';
-import Footer from '@/components/Footer';
-import HomeReclame from '@/components/HomeReclame';
-import FlashSales from '@/components/flashSales';
-import Categories from '@/components/Categories';
-import Delivery from '@/components/Delivery';
-import Features from '@/components/Features';
-import Promotion from '@/components/Promotion';
-import PromoBanner from '@/components/PromoBanner';
-import Explore from '@/components/Explore';
 
-const Home: React.FC = () => {
+const App: React.FC = () => {
   return (
     <>
-      <Header />
-      <HomeReclame />
-      <FlashSales />
-      <Categories />
-      <Promotion />
-      <PromoBanner />
-      <Explore />
-      <Features />
-      <Delivery />
-      <Footer />
+      <Home />
     </>
   );
 };
 
-export default Home;
+export default App;

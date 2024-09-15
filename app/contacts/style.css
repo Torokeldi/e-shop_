@@ -1,0 +1,15 @@
+.breadcrumb {
+  margin-top: 79px;
+  margin-bottom: 80px;
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}

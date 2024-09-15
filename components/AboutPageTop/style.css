@@ -1,0 +1,41 @@
+.about-page-top-content {
+  flex-direction: row;
+  display: flex;
+  gap: 75px;
+}
+
+.our-story {
+  flex-direction: column;
+  display: flex;
+  gap: 40px;
+  padding: 135px 0px 135px 0px;
+}
+
+.our-story h1 {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 6%;
+  text-align: left;
+}
+
+.txt-section {
+  width: 525px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.txt-section p {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.about-top-img {
+  width: 705px;
+  height: 609px;
+}
