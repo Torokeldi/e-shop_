@@ -1,0 +1,79 @@
+.Login-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 140px;
+}
+
+.Login-img {
+  width: 805px;
+  height: 781px;
+}
+
+.Login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login-title {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.Login-form p {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.Login-input {
+  width: 370px;
+  height: 32px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.Login-input::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  opacity: 0.4;
+}
+
+.Login-btn {
+  border-radius: 4px;
+  padding: 16px 48px 16px 48px;
+  width: 143px;
+  height: 56px;
+  background: rgb(219, 68, 68);
+}
+
+.Login-form-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Login-form a {
+  color: rgb(219, 68, 68);
+  font-family: Poppins;
+  font-size: 16px;
+}
